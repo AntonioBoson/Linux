@@ -9,22 +9,46 @@
 /* Globals */
 
 /* Functions */
+
+/** 
+ *  @brief Initializes linked list with head
+ *	Initializes linked list by setting the head
+ */
 void initList()
 {
 	head.next = NULL;	
 	p_head = &head;
 }
 
-void printAllCells()
+/** 
+ *  @brief Print all cell values
+ *	Print on the screen the value of all the existent cells
+ */
+int printAllCells()
 {
 	/* Auxiliar pointer to a cell. */
 	t_cell *p;
 	
 	for (p = p_head; p != NULL; p = p->next)
 		printf("%d\n",p->content);
+
+	return 0;
 }
 
-void insertCellInTheEnd(int content)
+/** 
+ *  @brief 
+ *	
+ */
+int deleteAllCells()
+{
+	return 0;
+}
+
+/** 
+ *  @brief 
+ *	
+ */
+void insertCellAtTheEnd(int content)
 {
 	/* Auxiliar pointer to a cell. */
 	t_cell *p;
@@ -46,4 +70,48 @@ void insertCellInTheEnd(int content)
 
 	/* Insere nova celular no fim. */
 	p->next = p_newCell;	
+}
+
+/** 
+ *  @brief 
+ *	
+ */
+void insertCellAtTheBeginning(int content)
+{
+}
+
+/** 
+ *  @brief 
+ *	
+ */
+int insertCellAtPosition(int content, int position)
+{
+	return 0;
+}
+
+/** 
+ *  @brief 
+ *	
+ */
+int getFirstCell()
+{
+	return 0;
+}
+
+/** 
+ *  @brief 
+ *	
+ */
+int getLastCell()
+{
+	return 0;
+}
+
+/** 
+ *  @brief 
+ *	
+ */
+int getCellByPosition(int position)
+{
+	return 0;
 }

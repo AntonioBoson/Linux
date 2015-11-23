@@ -1,3 +1,13 @@
+/**
+ * Author: Antonio Boson
+ * Email: antoniobosonjr@gmail.com
+ *
+ * Description: 
+ * 
+ * Implementation example of simple linked list with head on c language.
+ *
+ */
+
 /* Includes */
 #include <stdio.h>
 #include "linkedListWithHead.h"
@@ -5,12 +15,14 @@
 /* Main function */
 int main()
 {
-	// A lista está vazia. Ponteiro para próxima célula está vazio.
-
+	/* Initializes the list. */
 	initList();
+
+	/* Print all cells of the list. */
 	printAllCells();
-	insertCellInTheEnd(999);
-	printAllCells();
+
+	/* Insert a cell at the end of the list. */
+	insertCellAtTheEnd(999);
 
 	return 0;
 }
