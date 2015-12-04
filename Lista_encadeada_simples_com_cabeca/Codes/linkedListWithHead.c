@@ -26,11 +26,14 @@ void initList()
  */
 int printAllCells()
 {
+	unsigned char cellIndex = 1;
+	printf("Todas as celulas da lista:\n");
+
 	/* Auxiliar pointer to a cell. */
 	t_cell *p;
 	
-	for (p = p_head; p != NULL; p = p->next)
-		printf("%d\n",p->content);
+	for (p = p_head->next; p != NULL; p = p->next)
+		printf("%d. %d\n",cellIndex++,p->content);
 
 	return 0;
 }
